@@ -1,4 +1,4 @@
-FROM maven:3.8-jdk-17 AS build
+FROM maven:3.8.5-openjdk-17 AS build
 RUN mkdir -p workspace
 WORKDIR workspace
 COPY ./pom.xml /workspace
