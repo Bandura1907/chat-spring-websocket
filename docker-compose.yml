@@ -1,0 +1,12 @@
+version: "3.3"
+
+services:
+  chat:
+    image: chat
+    container_name: chat
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "4200:8080"
+    restart: always
